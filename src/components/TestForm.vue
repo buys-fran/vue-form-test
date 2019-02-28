@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title class="title">Test Form</v-card-title>
       <v-card-text>
-        <v-form @submit.prevent="submit" ref="form">
+        <v-form @submit.prevent="submit" v-model="valid" ref="form">
           <v-text-field
             label="Your Name"
             v-model="name"
